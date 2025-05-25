@@ -1,0 +1,262 @@
+/* Icon Classes */
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    background-color: currentColor;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Hover Effects for All Icons */
+.icon:hover {
+    transform: translateY(-3px);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+/* Contact Icons with Special Effects */
+.icon-envelope {
+    mask-image: url('envelope.svg');
+    -webkit-mask-image: url('envelope.svg');
+}
+
+.icon-envelope:hover {
+    background-color: #ea4335;
+    transform: scale(1.1) translateY(-2px);
+}
+
+.icon-phone {
+    mask-image: url('phone.svg');
+    -webkit-mask-image: url('phone.svg');
+}
+
+.icon-phone:hover {
+    background-color: #34a853;
+    animation: shake 0.5s ease;
+}
+
+.icon-linkedin {
+    mask-image: url('linkedin.svg');
+    -webkit-mask-image: url('linkedin.svg');
+}
+
+.icon-linkedin:hover {
+    background-color: #0077b5;
+    transform: scale(1.1);
+}
+
+.icon-github {
+    mask-image: url('github.svg');
+    -webkit-mask-image: url('github.svg');
+}
+
+.icon-github:hover {
+    background-color: #333;
+    transform: rotate(360deg) scale(1.1);
+    transition: all 0.5s ease;
+}
+
+.icon-instagram {
+    mask-image: url('instagram.svg');
+    -webkit-mask-image: url('instagram.svg');
+}
+
+.icon-instagram:hover {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.icon-twitter {
+    mask-image: url('twitter.svg');
+    -webkit-mask-image: url('twitter.svg');
+}
+
+.icon-twitter:hover {
+    background-color: #1da1f2;
+    animation: bounce 0.5s ease;
+}
+
+/* Skill Icons with Data-Theme Effects */
+.icon-chart-bar {
+    mask-image: url('chart-bar.svg');
+    -webkit-mask-image: url('chart-bar.svg');
+}
+
+.icon-chart-bar:hover {
+    background-color: #4CAF50;
+    animation: growBar 0.5s ease;
+}
+
+.icon-database {
+    mask-image: url('database.svg');
+    -webkit-mask-image: url('database.svg');
+}
+
+.icon-database:hover {
+    background-color: #2196F3;
+    transform: scale(1.1);
+}
+
+.icon-table {
+    mask-image: url('table.svg');
+    -webkit-mask-image: url('table.svg');
+}
+
+.icon-table:hover {
+    background-color: #FF9800;
+    animation: pulse 1s infinite;
+}
+
+.icon-python {
+    mask-image: url('python.svg');
+    -webkit-mask-image: url('python.svg');
+}
+
+.icon-python:hover {
+    background: linear-gradient(45deg, #306998, #FFD43B);
+    transform: scale(1.1) rotate(5deg);
+}
+
+.icon-brain {
+    mask-image: url('brain.svg');
+    -webkit-mask-image: url('brain.svg');
+}
+
+.icon-brain:hover {
+    background: linear-gradient(45deg, #FF4B4B, #7B61FF);
+    animation: pulse 1s infinite;
+}
+
+.icon-calculator {
+    mask-image: url('calculator.svg');
+    -webkit-mask-image: url('calculator.svg');
+}
+
+.icon-calculator:hover {
+    background-color: #607D8B;
+    transform: scale(1.1);
+}
+
+.icon-chart-line {
+    mask-image: url('chart-line.svg');
+    -webkit-mask-image: url('chart-line.svg');
+}
+
+.icon-chart-line:hover {
+    background-color: #3F51B5;
+    animation: drawLine 1s ease;
+}
+
+.icon-chart-pie {
+    mask-image: url('chart-pie.svg');
+    -webkit-mask-image: url('chart-pie.svg');
+}
+
+.icon-chart-pie:hover {
+    background: linear-gradient(45deg, #FF5722, #FF9800, #FFC107);
+    animation: rotate 1s ease;
+}
+
+.icon-book {
+    mask-image: url('book.svg');
+    -webkit-mask-image: url('book.svg');
+}
+
+.icon-book:hover {
+    background-color: #795548;
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.icon-git-alt {
+    mask-image: url('git-alt.svg');
+    -webkit-mask-image: url('git-alt.svg');
+}
+
+.icon-git-alt:hover {
+    background-color: #F05032;
+    animation: bounce 0.5s ease;
+}
+
+.icon-code {
+    mask-image: url('code.svg');
+    -webkit-mask-image: url('code.svg');
+}
+
+.icon-code:hover {
+    background: linear-gradient(45deg, #00BCD4, #2196F3);
+    transform: scale(1.1);
+}
+
+.icon-leaf {
+    mask-image: url('leaf.svg');
+    -webkit-mask-image: url('leaf.svg');
+}
+
+.icon-leaf:hover {
+    background-color: #4CAF50;
+    animation: sway 1s ease infinite;
+}
+
+.icon-robot {
+    mask-image: url('robot.svg');
+    -webkit-mask-image: url('robot.svg');
+}
+
+.icon-robot:hover {
+    background: linear-gradient(45deg, #FF4B4B, #7B61FF);
+    animation: pulse 1s infinite;
+}
+
+.icon-wave-square {
+    mask-image: url('wave-square.svg');
+    -webkit-mask-image: url('wave-square.svg');
+}
+
+.icon-wave-square:hover {
+    background: linear-gradient(45deg, #2196F3, #00BCD4);
+    animation: wave 1s ease infinite;
+}
+
+/* Animations */
+@keyframes shake {
+    0%, 100% { transform: rotate(0); }
+    25% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes growBar {
+    0% { transform: scaleY(1); }
+    50% { transform: scaleY(1.2); }
+    100% { transform: scaleY(1); }
+}
+
+@keyframes drawLine {
+    0% { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
+}
+
+@keyframes sway {
+    0%, 100% { transform: rotate(0); }
+    50% { transform: rotate(5deg); }
+}
+
+@keyframes wave {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+} 
